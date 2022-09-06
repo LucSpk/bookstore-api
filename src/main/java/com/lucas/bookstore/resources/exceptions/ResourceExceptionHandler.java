@@ -1,6 +1,5 @@
 package com.lucas.bookstore.resources.exceptions;
 
-import javax.servlet.Servlet;
 import javax.servlet.ServletRequest;
 
 import org.springframework.http.HttpStatus;
