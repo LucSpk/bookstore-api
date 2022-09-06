@@ -25,4 +25,9 @@ public class CategoriaService {
 	public List<Categoria> findAll() {
 		return repository.findAll();
 	}
+	
+	public Categoria create(Categoria obj) {
+		obj.setId(null);				// Deixa o id null para evitar que o JPA atualize os dados do banco caso o ID ja exista
+		return repository.save(obj);
+	}
 }
